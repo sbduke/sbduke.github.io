@@ -6,7 +6,7 @@
     <title>NDC Group 5</title>
   <body>
      <?php
-      $myfile = fopen("cointoss.txt", "r") or die("Unable to open file!");
+      $myfile = fopen("/cointoss.txt", "r") or die("Unable to open file!");
       echo fread($myfile,filesize("cointoss.txt"));
       fclose($myfile);
      ?> 
